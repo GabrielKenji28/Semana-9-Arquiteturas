@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Deleta caminhao";
+}
+@model Caminhao
+<div class="text-center">
+    <h1 class="display-4">Deleção de caminhão</h1>
+    
+</div>
+<div>
+    <div class="text-center" >
+    <h3> Realmente deseja excluir o contato (@Model.Nome) </h3>
+</div>
+<a role="button" class="btn-block btn-secondary" asp-controller="NewViews" asp-action="Index" >Cancelar exclusão</a>
+<a role="button" class="btn-block btn-danger" asp-route-id="@Model.Id" asp-controller="NewViews" asp-action="Apagar">Confirmar exclusão</a>
+</div>
