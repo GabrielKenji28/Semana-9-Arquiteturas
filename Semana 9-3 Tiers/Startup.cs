@@ -1,5 +1,7 @@
 using AppFinalCaminhao.Data;
 using AppFinalCaminhao.Repository;
+using AppFinalCaminhao.Semana_9_3_Tiers.Business.IService;
+using AppFinalCaminhao.Semana_9_3_Tiers.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,7 @@ namespace AppFinalCaminhao
             services.AddEntityFrameworkSqlServer()
                 .AddDbContext<BancoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DataBase")));
             services.AddScoped<ICaminhaoRepository, CaminhaoRepository>();
+            //services.AddScoped<ICaminhaoService, CaminhaoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

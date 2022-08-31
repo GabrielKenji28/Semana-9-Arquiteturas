@@ -1,4 +1,4 @@
-# semana 5 e 6 - ASP NET 
+# Semana  7 - Clean Code
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://sbs.t-systems.com.br/gitlab/mercedes/collab/estagio/gabriel-kenji/semana-5-e-6-asp-net.git
+git remote add origin https://sbs.t-systems.com.br/gitlab/mercedes/collab/estagio/gabriel-kenji/semana-7-clean-code.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://sbs.t-systems.com.br/gitlab/mercedes/collab/estagio/gabriel-kenji/semana-5-e-6-asp-net/-/settings/integrations)
+- [ ] [Set up project integrations](https://sbs.t-systems.com.br/gitlab/mercedes/collab/estagio/gabriel-kenji/semana-7-clean-code/-/settings/integrations)
 
 ## Collaborate with your team
 

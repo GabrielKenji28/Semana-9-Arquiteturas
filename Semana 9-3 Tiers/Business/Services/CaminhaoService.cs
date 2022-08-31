@@ -22,7 +22,7 @@ namespace AppFinalCaminhao.Semana_9_3_Tiers.Services
             }
             catch (Exception erro)
             {
-                throw new Exception($"Erro ao cadastrar o caminhão : {erro.Message}");
+                throw new Exception($"Erro ao cadastrar o carro : {erro.Message}");
             }
 
         }
@@ -36,7 +36,19 @@ namespace AppFinalCaminhao.Semana_9_3_Tiers.Services
             catch ( Exception erro)
             {
 
-                throw;
+                throw new Exception($"Erro ao editar o carro {erro.Message}");
+            }
+        }
+        public void MarcarComprado (Caminhao caminhao)
+        {
+            try
+            {
+                _caminhaoRepository.Deletar(caminhao);
+            }
+            catch (Exception erro)
+            {
+
+                throw new Exception($"Erro ao marcar como comprado {erro.Message}");
             }
         }
 

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AppFinalCaminhao.Semana_9_3_Tiers.Data.Model;
+using System.ComponentModel.DataAnnotations;
 
 namespace AppFinalCaminhao.Models
 {
@@ -6,6 +7,7 @@ namespace AppFinalCaminhao.Models
     {
         [Key]
         public int Id { get; set; }
+
         [Required(ErrorMessage ="Nome não pode ser nulo ")]
         public string Nome { get; set; }
 
@@ -13,6 +15,9 @@ namespace AppFinalCaminhao.Models
         public string Descricao { get; set; }
 
         [Required(ErrorMessage = "Data não pode ser nulo ")]
-        public string DataCriacao { get; set; } 
+        public string DataCriacao { get; set; }
+
+        [Required(ErrorMessage ="Modelo é obrigatório ")]        
+        public EnumModelo Modelo { get; set; }
     }
 }
