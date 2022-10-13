@@ -21,7 +21,7 @@ using AppFinalCaminhao;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\fh178\Documents\GIT Plano de Estágio\semana-9-arquiteturas\AppFinalCaminhao\Views\_ViewImports.cshtml"
-using AppFinalCaminhao.Infra.Models;
+using AppFinalCaminhao.Models;
 
 #line default
 #line hidden

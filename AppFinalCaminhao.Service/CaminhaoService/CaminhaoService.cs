@@ -16,7 +16,7 @@ namespace AppFinalCaminhao.Service.CaminhaoService
             _caminhaoRepository = caminhaoRepository;
         }
 
-        public void CadastrarCaminhao(Caminhao caminhao)
+        public void AnunciarCaminhao(Caminhao caminhao)
         {
             try
             {
@@ -26,6 +26,62 @@ namespace AppFinalCaminhao.Service.CaminhaoService
             {
 
                 throw new Exception($"Erro : {e.Message} ") ;
+            }
+        }
+
+        public List<Caminhao> ListarOsCaminhoes()
+        {
+            try
+            {
+                return _caminhaoRepository.ListarCaminhoes();
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception($"Erro : {e.Message} ");
+            }
+        }
+
+        //public bool VerificaValor(Caminhao caminhao, float valor)
+        //{
+        //    if(valor >= caminhao )
+        //}
+
+        public void ComprarCaminhao(Caminhao caminhao)
+        {
+            try
+            {
+                _caminhaoRepository.Deletar(caminhao);
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception($"Erro : {e.Message} ");
+            }
+        }
+        public Caminhao BuscarPorId(int id)
+        {
+            try
+            {
+                var caminhao = _caminhaoRepository.BuscarPorId(id);
+                return caminhao;
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception($"Erro : {e.Message} ");
+            }
+        }
+        public void Editando(Caminhao caminhao)
+        {
+            try
+            {
+                _caminhaoRepository.Editar(caminhao);
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception($"Erro : {e.Message} ");
             }
         }
 
